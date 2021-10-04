@@ -1,5 +1,6 @@
 package seedu.duke;
 
+import seedu.duke.commands.CalculateCapCommand;
 import seedu.duke.commands.Command;
 import seedu.duke.commands.ExitCommand;
 import seedu.duke.commands.HelpCommand;
@@ -19,6 +20,8 @@ public class Parser {
             return createInfoObject(argument);
         case "help":
             return new HelpCommand();
+        case "cap":
+            return new CalculateCapCommand(input);
         case "bye":
             return new ExitCommand();
         default:
