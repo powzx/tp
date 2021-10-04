@@ -4,6 +4,7 @@ import seedu.duke.commands.CalculateCapCommand;
 import seedu.duke.commands.Command;
 import seedu.duke.commands.ExitCommand;
 import seedu.duke.commands.HelpCommand;
+import seedu.duke.commands.InfoCommand;
 import seedu.duke.commands.InvalidCommand;
 
 public class Parser {
@@ -15,6 +16,8 @@ public class Parser {
         String argument = trimmedInput.replaceFirst(commandWord, "").trim();
 
         switch (commandWord.toLowerCase()) {
+        case "info":
+            return new InfoCommand();
         case "help":
             return new HelpCommand();
         case "cap":
