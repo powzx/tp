@@ -34,7 +34,7 @@ application {
 }
 
 shadowJar {
-    archiveBaseName = "Kolinux"
+    archiveBaseName = "duke"
     archiveClassifier = null
 }
 
