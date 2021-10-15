@@ -3,7 +3,8 @@
 
 @import 'jekyll-theme-cayman';
 
-.page-header{
-    background-image: url("../background.png");
-    background-size: contain
+#id {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
